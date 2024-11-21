@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Gerador de Senha Seguro - Crie senhas fortes e seguras de forma fácil." />
+    <title>Gerador de Senha</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js" defer></script>
+  </head>
+  <body>
+    <div id="register-container">
+      <div id="register-banner">
+        <div id="banner-layer">
+          <h1>Key 
+            Forge</h1>
+        </div>
+      </div>
+      <div id="register-form">
+        <h2>Crie sua senha:</h2>
+        <p>Utilize as opções abaixo para gerar uma senha segura.           </p>
+      <div class="form-control options-box">
+         <label for="letters">
+          <input type="checkbox" id="letters" name="letters" checked />
+            Letras
+         </label>
+         <label for="numbers">
+          <input type="checkbox" id="numbers" name="numbers" checked />
+            Números
+         </label>
+         <label for="symbols">
+           <input type="checkbox" id="symbols" name="symbols" checked />
+            Símbolos
+           </label>
+        </div>
+        <div class="form-control">
+          <label for="length">Quantidade de caracteres:</label>
+          <div class="length-buttons">
+            <button id="btn-6" class="length-button">6</button>
+            <button id="btn-8" class="length-button">8</button>
+            <button id="btn-12" class="length-button">12</button>
+            <button id="btn-other">Outro</button>
+          </div>
+        </div>
+        <div id="length-container" class="hide">
+          <label for="length">Quantidade de caracteres:</label>
+          <input type="range" id="length" min="13" max="48" value="13" />
+          <span id="length-value">13</span>
+        </div>
+        <button id="generate-password" class="hide">Criar senha</button>
+        <div id="generated-password" class="hide">
+  <p>Aqui está a sua senha:</p>
+  <div class="password-box">
+    <h4></h4>
+  </div>
+</div>
+        <!-- Botão de verificar senha -->
+       <button id="verify-password" class="verify-password-button">Verificar                   Senha</button>
+        <p id="password-strength-message"></p>
+      </div>
+    </div>
+  </body>
+</html>
